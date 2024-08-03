@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--ff-primary: 'Inter', sans-serif;
+
+	--color-light: #ffffff;
+	--color-dark: #111111;
+	--color-gray: #ffffff80;
+}
+
+body {
+	font-family: var(--ff-primary);
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	background-color: var(--color-dark);
+	color: var(--color-light);
+	min-height: 100vh;
+}
+
+/* HEADER */
+
+.header {
+    border-bottom: 1px solid var(--color-light);
+    padding: 1em;
+}
+
+/* POSTS */
+
+.posts {
+    padding: 1.5em;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:1em;
+}
+
+/* POST */
+
+.post{
+    border: 1px solid var(--color-gray);
+    border-radius:15px;
+    padding:0.2em;
+}
+
+.post-image{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.post-body{
+    padding: 0.5em;
+    color:var(--color-gray);
+}
+
+.post-body > a{
+    color:var(--color-gray);
+    text-decoration: none;
+}
