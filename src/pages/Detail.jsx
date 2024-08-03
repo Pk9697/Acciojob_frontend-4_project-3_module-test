@@ -1,5 +1,4 @@
 import DetailedPost from '../components/DetailedPost'
-import Header from '../components/Header'
 
 function Detail() {
 	const post = {
@@ -12,7 +11,6 @@ function Detail() {
 	}
 	return (
 		<>
-			<Header />
 			<DetailedPost post={post}/>
 		</>
 	)
