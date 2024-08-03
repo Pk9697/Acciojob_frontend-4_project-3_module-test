@@ -50,6 +50,11 @@ body {
     border: 1px solid var(--color-gray);
     border-radius:15px;
     padding:0.2em;
+    cursor: pointer;
+}
+
+.post:hover{
+    opacity: 0.8;
 }
 
 .post-image{
@@ -92,4 +97,13 @@ body {
 
 .detailed-post > h2{
     font-weight: inherit;
+}
+
+/* LOADER */
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
