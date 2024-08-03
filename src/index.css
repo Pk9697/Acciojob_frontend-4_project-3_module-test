@@ -31,6 +31,10 @@ body {
     padding: 1em;
 }
 
+.header > h3 {
+    font-weight: inherit;
+}
+
 /* POSTS */
 
 .posts {
@@ -66,4 +70,26 @@ body {
 .post-body > a{
     color:var(--color-gray);
     text-decoration: none;
+}
+
+/* DETAILED POST */
+
+.detailed-post-image{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+    max-width: 250px;
+}
+
+.detailed-post{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+}
+
+.detailed-post > h2{
+    font-weight: inherit;
 }
