@@ -35,6 +35,15 @@ body {
     font-weight: inherit;
 }
 
+.header > h3 > a {
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+.header > h3 > a:hover {
+    opacity: 0.8;
+}
+
 /* POSTS */
 
 .posts {
